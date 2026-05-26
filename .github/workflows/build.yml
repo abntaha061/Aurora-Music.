@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: Build debug APK with Gradle
-      run: ./gradlew assembleDebug
+      run: gradle assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
